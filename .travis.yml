@@ -14,9 +14,8 @@ before_install:
 script:
   - docker run -e CI=true scowil101/docker-react npm run test
    
-# Deploy to AWS Elastic Beanstalk
+# Deploy to AWS Elastic Beanstalkr
 deploy:
-
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "docker"
